@@ -1,0 +1,35 @@
+div .col-md-5 {
+    height: 94vh;
+    background-color: seagreen;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#txtCaptcha {
+    background-color: unset;
+    border: unset;
+    cursor: default;
+    padding: 2px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Modern
+}
+
+.button {
+    margin: 2rem;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url("./fonts/glyphicons-halflings-regular.eot");
+    src: url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+i {
+    cursor: pointer;
+}
