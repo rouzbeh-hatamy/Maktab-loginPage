@@ -1,6 +1,61 @@
-div .col-md-5 {
-    height: 94vh;
-    background-color: seagreen;
+.right {
+    height: 95vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 4rem;
+    color: dodgerblue;
+    font-weight: bolder;
+    cursor: default;
+}
+
+
+input {
+    margin: 2rem 0;
+}
+
+[type*="email"],
+[type*="text"],
+[type*="password"] {
+    border: none;
+    box-shadow: none;
+    border-radius: unset;
+    border-bottom: grey 2px solid;
+    background: unset;
+}
+
+[type*="email"]:focus,
+[type*="text"]:focus,
+[type*="password"]:focus {
+    border: none;
+    box-shadow: none;
+    border-radius: unset;
+    border-bottom: dodgerblue 2px solid;
+    color: dodgerblue;
+    outline: unset;
+}
+
+.userInfo {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 95%;
+    margin: 14px 0;
+    cursor: default;
+    color: #aaa;
+}
+
+.iconX {
+    position: absolute;
+    right: 53%;
+    margin: 25px 0;
+    cursor: default;
+    color: #aaa;
 }
 
 .inputForm {
@@ -24,12 +79,30 @@ div .col-md-5 {
     margin: 2rem;
 }
 
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url("./fonts/glyphicons-halflings-regular.eot");
-    src: url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+label {
+    color: grey;
+    font-size: 11px;
 }
 
 i {
     cursor: pointer;
+    margin: 2rem 0;
+}
+
+h3 {
+    cursor: default;
+}
+
+h5 {
+    cursor: default;
+    color: gray;
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff2') format('woff2'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff') format('woff'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf') format('truetype');
 }

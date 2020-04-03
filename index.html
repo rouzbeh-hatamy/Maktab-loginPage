@@ -11,32 +11,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <script src="./Scripts/jquery-1.10.2.min.js"></script>
     <script src="./Scripts/bootstrap-rtl.js"></script>
-    <script src="./scripts.js"></script>
-
 </head>
 
 <body>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6 right">
             <span class="title">ورود</span>
             <div class="loginForm ">
-                <h1>ورود به حساب کاربری</h1>
-                <h3>جهت ورود به برنامه نام کاربری و رمز عبور خود را وارد نمایید</h3>
-                <div class="inputForm">
-                    <div class="form-group col-md-8">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="نام کاربری">
+
+                <div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3>ورود به حساب کاربری</h3>
+                        <h5>جهت ورود به برنامه نام کاربری و رمز عبور خود را وارد نمایید</h5>
                     </div>
-                    <div class="form-group col-md-8">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="رمز عبور">
-                    </div>
-                    <div class="row col-md-8">
-                        <input type="text" id="txtCompare" class="col-md-7" placeholder="کد امنیتی" />
-                        <input type="text" id="txtCaptcha" class="col-md-3" />
-                        <i class="fas fa-sync-alt col-md-1 " onclick="GenerateCaptcha();"></i>
-                    </div>
-                    <div class="button col-md-8"><button type="submit" class="btn btn-primary btn-block">ورود</button>
-                    </div>
-                    <div class="checkbox col-md-7">
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="userInfo">
+                            <i class="fas fa-user icon"></i>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="نام کاربری">
+                        </div>
+                        <div class="userInfo">
+                            <i class="fas fa-lock icon"></i>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="رمز عبور">
+                        </div>
+                        <div class="userInfo">
+                            <i class="fas fa-vector-square iconX"></i>
+                            <input type="text" id="txtCompare" class="col-md-7" placeholder="کد امنیتی" />
+                            <input type="text" id="txtCaptcha" class="col-md-4" />
+                            <i class="fas fa-sync-alt  " onclick="GenerateCaptcha();"></i>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="mYbtn">ورود</button>
+
                         <label>
                             <input type="checkbox">مرا به خاطر بسپار
                         </label>
@@ -44,8 +51,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-7"></div>
+        <div class="col-md-6"></div>
     </div>
+    <script src="./scripts.js" async defer></script>
+
 </body>
 
 </html>

@@ -11,14 +11,18 @@
     var captchaCode = str + chr1 + ' ' + chr2 + ' ' + chr3;
     document.getElementById("txtCaptcha").value = captchaCode
   }
+  let btn = document.getElementById("mYbtn")
+  btn.addEventListener("click", validateCatcha)
 
-  /* Validating Captcha Function */
-  function ValidCaptcha() {
+  function validateCatcha() {
     var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
     var str2 = removeSpaces(document.getElementById('txtCompare').value);
 
-    if (str1 == str2) return "متن وارد شده صحیح میباشد";
-    return "متن وارد شده اشتباه است";
+    if (str1 == str2) {
+      alert("correct captcha")
+    } else {
+      alert("incorrect captcha")
+    }
   }
 
   /* Remove spaces from Captcha Code */
