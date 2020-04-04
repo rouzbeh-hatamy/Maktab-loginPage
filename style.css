@@ -3,10 +3,10 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-.title {
-    margin: 4rem;
+.headTitle {
     color: dodgerblue;
     font-weight: bolder;
     cursor: default;
@@ -106,3 +106,86 @@ h5 {
         url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff') format('woff'),
         url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: "com-Regular";
+    src: url("./Assets/Fonts/Comfortaa-Regular.ttf") format("truetype");
+}
+
+@keyframes clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.beam {
+    display: block;
+    width: 400px;
+    height: 700px;
+    background: linear-gradient(21deg, transparent 17%, white), transparent;
+    animation: clockwise 10s linear infinite;
+    transform-origin: 100% 100%;
+    position: absolute;
+    top: -65%;
+    left: 0%;
+}
+
+.screen {
+    height: 98vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    background-image: linear-gradient(to top right, rgb(48, 190, 238), rgb(153, 241, 219));
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.element {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    animation-name: circleRadar;
+    background-color: white;
+    opacity: 0.1;
+    border-radius: 50%;
+  }
+  .circleOne{
+    animation: circleRadar 8s 1s infinite normal forwards;
+  }.circleTwo{
+    animation: circleRadar 8s 1.5s infinite normal forwards;
+  }.circleThree{
+    animation: circleRadar 8s 2s infinite normal forwards;
+  }.circleFour{
+    animation: circleRadar 8s 2.5s infinite normal forwards;
+  }.circleFive{
+    animation: circleRadar 8s 3s infinite normal forwards;
+  }.circleSix{
+    animation: circleRadar 8s 3.5s infinite normal forwards;
+  }.circleSeven{
+    animation: circleRadar 8s 4s infinite normal forwards;
+  }
+  @keyframes circleRadar {
+    0% {
+      transform: scale(0.2);
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.05;
+    }
+    100% {
+      transform: scale(60);
+      opacity: 0;
+    }
+  }
