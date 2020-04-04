@@ -1,5 +1,5 @@
 .right {
-    height: 95vh;
+    height: 99vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -123,15 +123,15 @@ h5 {
 }
 
 .beam {
-    display: block;
-    width: 400px;
-    height: 700px;
-    background: linear-gradient(21deg, transparent 17%, white), transparent;
     animation: clockwise 10s linear infinite;
-    transform-origin: 100% 100%;
+    transform-origin: bottom left;
+    bottom: 50%;
+    left: 50%;
+    display: block;
     position: absolute;
-    top: -65%;
-    left: 0%;
+    opacity: 0.2;
+
+
 }
 
 .screen {
@@ -140,7 +140,9 @@ h5 {
     position: absolute;
     overflow: hidden;
     z-index: -1;
-    background-image: linear-gradient(to top right, rgb(48, 190, 238), rgb(153, 241, 219));
+    background-image: linear-gradient(45deg,
+            rgba(15, 176, 233, 1) 0%,
+            rgba(130, 233, 218, 1) 100%);
 }
 
 .logo {
@@ -148,6 +150,15 @@ h5 {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+}
+
+.circles {
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -160,32 +171,70 @@ h5 {
     background-color: white;
     opacity: 0.1;
     border-radius: 50%;
-  }
-  .circleOne{
+    top: 50%;
+}
+
+.circleOne {
     animation: circleRadar 8s 1s infinite normal forwards;
-  }.circleTwo{
+}
+
+.circleTwo {
     animation: circleRadar 8s 1.5s infinite normal forwards;
-  }.circleThree{
+}
+
+.circleThree {
     animation: circleRadar 8s 2s infinite normal forwards;
-  }.circleFour{
+}
+
+.circleFour {
     animation: circleRadar 8s 2.5s infinite normal forwards;
-  }.circleFive{
+}
+
+.circleFive {
     animation: circleRadar 8s 3s infinite normal forwards;
-  }.circleSix{
+}
+
+.circleSix {
     animation: circleRadar 8s 3.5s infinite normal forwards;
-  }.circleSeven{
+}
+
+.circleSeven {
     animation: circleRadar 8s 4s infinite normal forwards;
-  }
-  @keyframes circleRadar {
+}
+
+@keyframes circleRadar {
     0% {
-      transform: scale(0.2);
-      opacity: 0.1;
+        transform: scale(0.2);
+        opacity: 0.1;
     }
+
     50% {
-      opacity: 0.05;
+        opacity: 0.05;
     }
+
     100% {
-      transform: scale(60);
-      opacity: 0;
+        transform: scale(60);
+        opacity: 0;
     }
-  }
+}
+
+.textAntivirus {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5%;
+    font-size: 20px;
+    font-family: "com-Regular";
+}
+
+@media screen and (max-width: 992px) {
+    .row {
+        width: 100vw;
+    }
+
+    .loginForm {
+        padding: 0 12px;
+    }
+}

@@ -19,9 +19,9 @@
     var str2 = removeSpaces(document.getElementById('txtCompare').value);
 
     if (str1 == str2) {
-      alert("correct captcha")
+      alert("correct Captcha")
     } else {
-      alert("incorrect captcha")
+      alert("incorrect Captcha")
     }
   }
 
